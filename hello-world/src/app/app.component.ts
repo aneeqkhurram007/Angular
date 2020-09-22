@@ -1,5 +1,6 @@
 import { ParseTreeResult } from '@angular/compiler';
 import { Component } from '@angular/core';
+import { ActionSequence } from 'protractor';
 
 @Component({
   selector: 'app-root',
@@ -34,4 +35,34 @@ export class AppComponent {
     console.log(val);
     this.currentval = val;
   }
+  show = 'green';
+  color = 'brown';
+  data = [
+    {
+      name: 'aneeq',
+      age: 20,
+      email: 'kuxhbhi',
+    },
+    {
+      name: 'Murshad',
+      age: 35,
+      email: 'kuxhbhi',
+    },
+    {
+      name: 'Sarkar',
+      age: 3500,
+    },
+    {
+      name: 'Chutti Kar',
+      age: 15,
+    },
+  ];
+  showBox = false;
+  getUserValue(values) {
+    console.log(values);
+  }
+  updateColor() {
+    this.color = 'red';
+  }
+  err = false;
 }

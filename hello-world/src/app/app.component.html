@@ -1014,7 +1014,54 @@
   <button (click)="getVal(box.value)">Get Value</button>
   {{ currentval }}
 </div>
+<div>
+  <h1 *ngIf="show == 'no'; then ifElseBlock; else blockElse"></h1>
+  <ng-template #blockElse>
+    <h1>else block</h1>
+  </ng-template>
+  <ng-template #ifElseBlock>
+    <h1>If Block</h1>
+  </ng-template>
+</div>
+<ng-template *ngIf="show == 'red'">
+  <h1>Red</h1>
+</ng-template>
+<ng-template [ngIf]="show == 'blue'">
+  <h1>Blue</h1>
+</ng-template>
+<ng-template [ngIf]="show == 'green'">
+  <h1>Green</h1>
+</ng-template>
+<h1>Switch Case</h1>
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'red'">RED</h1>
+  <h1 *ngSwitchCase="'green'">YELLOW</h1>
+  <h1 *ngSwitchCase="'blue'">BLUE</h1>
+</div>
+<h1></h1>
+<!-- <h2 *ngFor="let i of data">
+  {{ i.name }}
 
+  {{ i.age }}
+</h2> -->
+<table border="1">
+  <tr>
+    <td>Name</td>
+    <td>Age</td>
+    <td>Email</td>
+  </tr>
+  <tr *ngFor="let i of data">
+    <td>{{ i.name }}</td>
+    <td>{{ i.age }}</td>
+    <td>{{ i.email }}</td>
+  </tr>
+</table>
+<!-- <h2 *ngFor="let i of data">{{ i.age }}</h2> -->
+<!---Property Binding-->
+<input type="text" #box1 value="{{ color }}" />
+<button disabled="{{ showBox }}">Click Here</button>
+<input type="text" #box2 [value]="color" />
+<button [disabled]="showBox">Click Here Box 2</button>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -1022,5 +1069,25 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
+<h1>Forms</h1>
+<form #form1="ngForm" (ngSubmit)="getUserValue(form1.value)">
+  <input
+    type="text"
+    ngModel
+    name="username"
+    placeholder="Enter Name"
+  /><br /><br />
+  <input type="text" ngModel name="age" placeholder="Enter age" /><br /><br />
+  <input
+    type="text"
+    ngModel
+    name="email"
+    placeholder="Enter email"
+  /><br /><br />
+  <button>Save</button>
+</form>
+<h1 [style.color]="err ? 'Blue' : 'Orange'">Header and Footer</h1>
+<button [style.color]="color" (click)="updateColor()">Conditional Style</button>
+<app-header></app-header>
+<app-footer></app-footer>
 <router-outlet></router-outlet>
