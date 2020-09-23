@@ -1088,6 +1088,17 @@
 </form>
 <h1 [style.color]="err ? 'Blue' : 'Orange'">Header and Footer</h1>
 <button [style.color]="color" (click)="updateColor()">Conditional Style</button>
+<button mat-raised-button>Material Button</button>
+<mat-slider step="4" tickInterval="3" minlength="0" maxlength="20"></mat-slider>
+<mat-slider tickInterval="auto"></mat-slider>
+<mat-slider
+  thumbLabel
+  [displayWith]="formatLabel"
+  tickInterval="1000"
+  min="1"
+  max="20"
+  style="width: 300px"
+></mat-slider>
 <app-header></app-header>
 <app-footer></app-footer>
 <router-outlet></router-outlet>

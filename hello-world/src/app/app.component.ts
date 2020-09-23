@@ -65,4 +65,11 @@ export class AppComponent {
     this.color = 'red';
   }
   err = false;
+  formatLabel(value: number) {
+    if (value >= 20) {
+      return value;
+    }
+
+    return value;
+  }
 }
