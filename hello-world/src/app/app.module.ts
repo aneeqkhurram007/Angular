@@ -13,12 +13,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSliderModule } from '@angular/material/slider';
 import { from } from 'rxjs';
+import { NewUserComponent } from './new-user/new-user.component';
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
     HeaderComponent,
     FooterComponent,
+    NewUserComponent,
   ],
   imports: [
     BrowserModule,

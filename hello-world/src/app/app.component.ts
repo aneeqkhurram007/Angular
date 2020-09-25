@@ -72,4 +72,9 @@ export class AppComponent {
 
     return value;
   }
+  newName = '';
+  parent(data) {
+    console.warn(data);
+    this.newName = data.age;
+  }
 }

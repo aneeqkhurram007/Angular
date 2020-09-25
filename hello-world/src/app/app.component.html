@@ -1099,6 +1099,15 @@
   max="20"
   style="width: 300px"
 ></mat-slider>
+<!-- <h1>Pass Data Parent to Child Component in Angular</h1>
+<div *ngFor="let data of data">
+  <app-new-user [name]="data"></app-new-user>
+  <br />
+  <br />
+</div> -->
+<h1>Pass Data Child to Parent</h1>
+<app-new-user (parent)="parent($event)"> </app-new-user>
+<h1>{{ newName }}</h1>
 <app-header></app-header>
 <app-footer></app-footer>
 <router-outlet></router-outlet>
