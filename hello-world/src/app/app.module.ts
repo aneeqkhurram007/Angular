@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
@@ -16,6 +16,7 @@ import { from } from 'rxjs';
 import { NewUserComponent } from './new-user/new-user.component';
 import { AdminComponent } from './admin/admin.component';
 import { PageNotComponent } from './page-not/page-not.component';
+import { CustomStyleDirective } from './custom-style.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { PageNotComponent } from './page-not/page-not.component';
     NewUserComponent,
     AdminComponent,
     PageNotComponent,
+    CustomStyleDirective,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +37,7 @@ import { PageNotComponent } from './page-not/page-not.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatSliderModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

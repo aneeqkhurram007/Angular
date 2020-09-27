@@ -1,7 +1,14 @@
 import { ParseTreeResult } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { ActionSequence } from 'protractor';
+import { UsersDataService } from './users-data.service';
 
+interface dataType {
+  name: string;
+  id: number;
+  pakistani: boolean;
+  address: any;
+}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -73,10 +80,27 @@ export class AppComponent {
     return value;
   }
   newName = '';
+  constData: any = [];
+
   parent(data) {
     console.warn(data);
     this.newName = data.age;
   }
   pipeName = 'aneeq khurram';
   toDay = Date.now();
+  constructor(private user: UsersDataService) {
+    this.user.getData().subscribe((data) => {
+      console.warn(data);
+      this.constData = data;
+    });
+  }
+  fetchData() {
+    const data: dataType = {
+      name: 'Aneeq Khurram',
+      id: 100,
+      pakistani: true,
+      address: '23564H',
+    };
+    return data;
+  }
 }

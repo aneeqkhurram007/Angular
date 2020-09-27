@@ -1119,8 +1119,22 @@
   <br /><br />
   <a routerLink="admin">Admin</a>
   <br /><br />
-  <a routerLink="about">Page Not Found</a>
+  <a routerLink="about">About</a>
   <router-outlet></router-outlet>
 </div>
+<h1>Custom Styling</h1>
+<h2 appCustomStyle>Color Shift</h2>
+<table border="1">
+  <tr>
+    <td>ID</td>
+    <td>Title</td>
+    <td>User Id</td>
+  </tr>
+  <tr *ngFor="let item of constData">
+    <td>{{ item.id }}</td>
+    <td>{{ item.title }}</td>
+    <td>{{ item.userId }}</td>
+  </tr>
+</table>
 <app-header></app-header>
 <app-footer></app-footer>
