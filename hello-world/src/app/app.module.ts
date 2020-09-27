@@ -14,6 +14,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSliderModule } from '@angular/material/slider';
 import { from } from 'rxjs';
 import { NewUserComponent } from './new-user/new-user.component';
+import { AdminComponent } from './admin/admin.component';
+import { PageNotComponent } from './page-not/page-not.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,8 @@ import { NewUserComponent } from './new-user/new-user.component';
     HeaderComponent,
     FooterComponent,
     NewUserComponent,
+    AdminComponent,
+    PageNotComponent,
   ],
   imports: [
     BrowserModule,

@@ -1108,6 +1108,19 @@
 <h1>Pass Data Child to Parent</h1>
 <app-new-user (parent)="parent($event)"> </app-new-user>
 <h1>{{ newName }}</h1>
+<h1>Pipe</h1>
+<h2>{{ pipeName | uppercase }}</h2>
+<h2>{{ toDay | date: "fullDate" }}</h2>
+<h2>{{ "Hello Angular" | slice: 0 }}</h2>
+<h2>{{ 10 | currency: "PKR" }}</h2>
+<h1>Routing</h1>
+<div>
+  <a routerLink="user-list">Users-List</a>
+  <br /><br />
+  <a routerLink="admin">Admin</a>
+  <br /><br />
+  <a routerLink="about">Page Not Found</a>
+  <router-outlet></router-outlet>
+</div>
 <app-header></app-header>
 <app-footer></app-footer>
-<router-outlet></router-outlet>

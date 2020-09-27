@@ -77,4 +77,6 @@ export class AppComponent {
     console.warn(data);
     this.newName = data.age;
   }
+  pipeName = 'aneeq khurram';
+  toDay = Date.now();
 }
