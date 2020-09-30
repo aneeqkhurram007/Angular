@@ -17,6 +17,7 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { AdminComponent } from './admin/admin.component';
 import { PageNotComponent } from './page-not/page-not.component';
 import { CustomStyleDirective } from './custom-style.directive';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import { CustomStyleDirective } from './custom-style.directive';
     MatButtonModule,
     MatSliderModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

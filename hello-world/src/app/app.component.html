@@ -1136,5 +1136,10 @@
     <td>{{ item.userId }}</td>
   </tr>
 </table>
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+  <input type="text" name="email" ngModel /><br /><br />
+  <input type="password" name="password" ngModel /><br /><br />
+  <button type="submit" name="email">Log IN</button><br /><br />
+</form>
 <app-header></app-header>
 <app-footer></app-footer>

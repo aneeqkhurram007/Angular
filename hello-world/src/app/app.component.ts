@@ -103,4 +103,7 @@ export class AppComponent {
     };
     return data;
   }
+  onSubmit(data) {
+    console.warn(data);
+  }
 }
