@@ -1,0 +1,84 @@
+html body{
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: Arial;
+}
+
+/* navbar */
+.navbar-brand{
+    color: white;
+    font-size: 35px !important;
+}
+.login{
+    margin-top: -6px;
+}
+/*login button */
+.avail{
+    background-color: blueviolet !important;
+    color: white !important;
+}
+.avail:hover{
+    background-color: white !important;
+    color: blueviolet!important;
+    border: none !important;
+    outline: none !important;
+}
+/* end button */
+
+/* end navbar */
+
+
+/* form */
+.signup{
+    background: blueviolet;
+    padding: 50px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 350px;
+}
+
+form{
+    width: 240px;
+    text-align: center;
+}
+input{
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: white;
+}
+::placeholder{
+    color: aliceblue;
+    opacity: 0.8;
+}
+.btnn{
+    background-color: white !important;
+    border-radius: 50px !important;
+    color: blueviolet !important;
+    width: 200px;
+}
+
+
+/* footer */
+
+.footer label:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 540px){
+    .navbar ul li a{
+        text-align: center;
+        color: blueviolet !important;
+    }
+    .navbar ul{
+        background-color: white;
+    }
+}

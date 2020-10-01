@@ -1,0 +1,405 @@
+html body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    font-family: Arial;
+}
+
+/* navbar */
+.navbar{
+    overflow-x: hidden !important;
+}
+.navbar-brand{
+    color: white;
+    font-size: 32px !important;
+}
+.login{
+    margin-top: -6px;
+}
+
+/* button */
+.avail{
+    background-color: blueviolet !important;
+    color: white !important;
+}
+.avail:hover{
+    background-color: white !important;
+    color: blueviolet!important;
+    border: none !important;
+    outline: none !important;
+}
+/* end button */
+
+
+/* end navbar */
+
+.booking-form-box{
+    max-width: 350px;
+    border: 1px solid #ced4da;
+    margin: 10% auto 0;
+    margin-right: 30px;
+    margin-top: 30px;
+
+}
+.rooms{
+    position: relative;
+    top: 420px;
+}
+.booking-form{
+    padding: 0 20px 20px;
+}
+.booking-form label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: white;
+}
+.input-grp{
+    width: 151px;
+    display: inline-block;
+}
+.form-control{
+    font-size: 12px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.select-date::-webkit-calendar-picker-indicator{
+    background: transparent !important;
+}
+
+h1 {
+    text-align: left;
+}
+/* search form */
+.book{
+    background-color: white;
+    color: blueviolet !important;
+}
+
+/* select your room */
+.select{
+    background-color: blueviolet !important;
+    color: white !important;
+}
+
+img{
+    margin-right: 90px;
+}
+
+.rooms{
+    position: relative;
+    top: 0;
+}
+
+/* Responsiveness  */
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+    .description{
+        width: 60%;
+    }
+
+    .navbar-brand {
+        font-size: 35px !important;
+        margin-left: 10px;
+    }
+    .rooms{
+        position: relative;
+        top: 0;
+    }
+
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+
+    .description{
+        width: 50%;
+    }
+
+    .navbar-brand{
+        font-size: 32px !important;
+        margin-left: 10px;
+    }
+    .rooms{
+        position: relative;
+        top: 0;
+    }
+
+}
+@media screen and (max-width: 767px){
+
+    .booking-form-box{
+        position: relative;
+        top: 10px;
+        left: 20px;
+        width: 50%;
+    }
+
+   .btt{
+       position: relative;
+       right: 50px;
+   }
+ .loc{
+    width: 42%;
+}
+ .head{
+     font-size: 22px;
+     font-weight: bold;
+ }
+ .add{
+font-size: 17px;
+ }
+
+    .navbar-brand{
+        font-size: 30px !important;
+        margin-left: 10px;
+    }
+    .rooms{
+        position: relative;
+        top: 0px;
+    }
+    .one{
+        position: relative;
+        bottom: 50px;
+    }
+    .two{
+        position: relative;
+       bottom: 55px;
+    }
+    .room-img{
+        position: relative;
+        left: 40px;
+        margin-top: 30px;
+        width: 550px;
+    }
+    .button{
+        margin: 0 auto !important;
+        width: 20% !important;
+    }
+
+}
+
+@media (min-width: 446px) and (max-width: 699px){
+
+    .description{
+        position: relative;
+        bottom: 120px;
+    }
+    .ammenities{
+    position: relative;
+        top: -120px;
+    }
+    .navbar{
+        overflow-x: hidden !important;
+    }
+
+    .navbar-brand{
+        font-size: 20px !important;
+        margin-left: 10px;
+    }
+
+    .rooms{
+        position: relative;
+       top: -100px;
+    }
+
+
+    .carousel-item{
+        height: 350px;
+    }
+    .car{
+        height: 350px;
+    }
+    .pay{
+        margin-top: 20px;
+    }
+    .one{
+        position: relative;
+        bottom: 50px;
+    }
+    .two{
+        position: relative;
+        bottom: 210px;
+        left: 180px;
+    }
+    .room-img{
+        position: relative;
+        left: 40px;
+        margin-top: 30px;
+        width: 400px;
+    }
+    .button{
+        margin: 0 auto !important;
+        width: 20% !important;
+    }
+    .book{
+        position: relative;
+        top: 25px;
+        right: 12px;
+    }
+
+}
+@media screen and (max-width: 445px) {
+    .navbar{
+        overflow-x: hidden !important;
+    }
+
+    .navbar-brand{
+        font-size: 20px !important;
+        margin-left: 10px;
+    }
+    .navbar-toggler{
+        margin-right: 180px;
+    }
+
+    .carousel-item{
+        height: 350px;
+    }
+    .car{
+        height: 350px;
+    }
+    .pay{
+        margin-top: 20px;
+    }
+    .one{
+        position: relative;
+        bottom: 50px;
+    }
+    .two{
+        position: relative;
+        bottom: 208px;
+        left: 170px;
+    }
+    .room-img{
+        position: relative;
+        left: 30px;
+        margin-top: -60px;
+        width: 260px;
+    }
+    .button{
+        margin: 0 auto !important;
+        width: 30% !important;
+    }
+    .book{
+        position: relative;
+        top: 25px;
+        right: 12px;
+    }
+
+    .booking-form-box {
+        position: relative;
+        top: -10px;
+        right: 10px;
+        width: 100%;
+    }
+
+    .description {
+        position: relative;
+        top: 430px;
+    }
+
+    .loc {
+        width: 100%;
+    }
+
+    .head {
+        font-size: 28px;
+
+    }
+
+    .add {
+        font-size: 23px;
+    }
+
+    .ammenities {
+        position: relative;
+        top: 420px;
+    }
+
+
+    .image {
+        position: relative;
+        bottom: 70px;
+    }
+
+    .btt{
+        position: relative;
+        left: 10px;
+        bottom: 30px;
+    }
+
+    .rooms{
+        margin-top: 440px;
+    }
+
+
+    @media screen and (max-width: 367px) {
+.navbar{
+    overflow-x: hidden !important;
+}
+        .booking-form-box{
+            margin-left: -5px;
+            width: 90%;
+        }
+        .navbar-brand{
+            font-size: 20px !important;
+            margin-left: 10px;
+        }
+        .navbar-toggler{
+            margin-right: 170px;
+        }
+
+        .carousel-item{
+            height: 300px;
+        }
+        .car{
+            height: 300px;
+        }
+        .description{
+          width: 95% !important;
+
+        }
+        .btt{
+            position: relative;
+            left: 10px;
+            bottom: 30px;
+        }
+        .pay{
+           margin-top: 20px;
+        }
+        .one{
+            position: relative;
+            bottom: 50px;
+        }
+        .two{
+            position: relative;
+            bottom: 208px;
+            left: 170px;
+        }
+        .room-img{
+            position: relative;
+            left: 30px;
+            margin-top: -60px;
+            width: 260px;
+
+        }
+        .button{
+           margin: 0 auto !important;
+            width: 30% !important;
+        }
+        .book{
+            position: relative;
+            top: 25px;
+            right: 12px;
+        }
+        .rooms{
+         margin-top: 440px;
+        }
+
+    }
+}
+

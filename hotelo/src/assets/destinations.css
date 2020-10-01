@@ -1,0 +1,343 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+html{
+    font-size: 10px;
+}
+html body{
+    font-family: Arial;
+
+}
+/* navbar */
+.navbar-brand{
+    color: white;
+    font-size: 35px !important;
+}
+.login{
+    margin-top: -6px;
+}
+/*login button */
+.avail{
+    background-color: blueviolet !important;
+    color: white !important;
+}
+.avail:hover{
+    background-color: white !important;
+    color: blueviolet!important;
+    border: none !important;
+    outline: none !important;
+}
+/* end button */
+
+/* end navbar */
+
+/* search bar */
+
+.wrapper{
+    background: url(delux.jpg) no-repeat;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_box{
+    width: 40%;
+    position: relative;
+    top: 20px;
+}
+.search_box input[type="text"]{
+    width: 100%;
+    padding: 20px;
+    padding-right: 60px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 18px;
+    color: white;
+    outline: none;
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+::-moz-placeholder{
+    color: white;
+}
+::-ms-input-placeholder{
+    color: white;
+}
+.fa-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    color: white;
+    font-size: 25px;
+}
+
+/* card */
+.blog-post{
+    width: 100%;
+    max-width: 95em;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    border-radius: 0.8rem;
+}
+.blog-post_img{
+    min-width: 35rem;
+    max-width: 35rem;
+    height: 30rem;
+    transform: translateX(-8rem);
+    position: relative;
+}
+.blog-post_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.8rem;
+}
+.blog-post_img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.05);
+    border-radius: .8rem;
+}
+.blog-post_date span{
+    display: block;
+    color: blueviolet;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: .5rem 0;
+}
+.blog-post_title{
+    font-size: 2rem;
+    margin: 1.5rem 0 2rem;
+
+    color: blueviolet;
+}
+.rating{
+    position:relative;
+    padding: 5px 0;
+    }
+    .rating .fa{
+        color: #f7f406;
+        margin-right: 2px;
+        font-size:26px;
+        }
+.blog-post_text{
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color: black;
+}
+.blog-post_cta{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-size: 1.5rem;
+    color: white;
+    background-color: blueviolet;
+    border-radius: .8rem;
+    text-decoration: none;
+    margin-top: 8px;
+}
+.blog-post_cta:hover{
+    background-color: white;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+
+/* Responsiveness  */
+@media (min-width: 1200px) and (max-width: 4000px){
+
+    .navbar-brand{
+        font-size: 38px !important;
+        margin-left: 10px;
+    }
+
+    .art{
+        height: 350px;
+    }
+
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .blog-post{
+        position: relative;
+        right: 30px;
+        width: 800px;
+    }
+
+    .navbar-brand{
+        font-size: 35px !important;
+        margin-left: 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .search_box{
+        width: 80%;
+    }
+    .blog-post{
+        position: relative;
+        right: 150px;
+        width: 780px;
+    }
+    .rating{
+        position: relative;
+        right: 40px;
+    }
+    .list{
+        position: relative;
+        right: 80px;
+    }
+
+    .navbar-brand{
+        font-size: 32px !important;
+        margin-left: 10px;
+    }
+
+
+}
+@media screen and (max-width: 767px){
+
+    .blog-post_img{
+        min-width: 100%;
+        max-width: 100%;
+        transform: translate(0, -8rem);
+    }
+    .blog-post{
+        position: relative;
+        right: 30px;
+        width: 400px;
+        top: 40px;
+        padding: 2.5rem;
+        flex-direction: column;
+    }
+    .blog-post_date{
+        position: relative;
+        left: 5px;
+    }
+    .rating{
+        position: relative;
+        left: -40px;
+        width: 200px;
+    }
+    .faa{
+        position: relative;
+        left: 5px;
+    }
+    .blog-post_cta {
+        position: relative;
+        left: 10px;
+    }
+
+}
+@media (min-width: 446px) and (max-width: 650px){
+    .navbar-brand{
+        font-size: 20px !important;
+    }
+    .navbar ul li a{
+        text-align: center;
+        color: blueviolet !important;
+    }
+    .navbar ul{
+        background-color: white;
+    }
+    .search_box{
+        width: 80% !important;
+    }
+    .blog-post{
+        position: relative;
+        right: 165px;
+        width: 380px;
+        top: 40px;
+        padding: 2.5rem;
+        flex-direction: column;
+    }
+    .blog-post_date{
+        position: relative;
+        left: 5px;
+    }
+    .rating{
+        position: relative;
+        left: -50px;
+        width: 200px;
+    }
+    .faa{
+        position: relative;
+        left: 5px;
+    }
+    .blog-post_cta {
+        position: relative;
+        left: 0px;
+    }
+}
+@media screen and (max-width: 445px) {
+    .navbar-brand{
+        font-size: 20px !important;
+    }
+    .navbar ul li a{
+        text-align: center;
+        color: blueviolet !important;
+    }
+    .navbar ul{
+        background-color: white;
+    }
+    .search_box{
+        width: 80% !important;
+    }
+    .blog-post{
+        position: relative;
+        right: 190px;
+        width: 350px;
+    }
+
+    .navbar-brand{
+        font-size: 30px !important;
+        margin-left: 10px;
+    }
+
+
+    @media screen and (max-width: 367px) {
+        .navbar-brand{
+            font-size: 20px !important;
+        }
+        .navbar ul li a{
+            text-align: center;
+            color: blueviolet !important;
+        }
+        .navbar ul{
+            background-color: white;
+        }
+        .search_box{
+            width: 80% !important;
+        }
+       .blog-post{
+           width: 320px;
+       }
+       .blog-post_cta{
+           position: relative ;
+           left: -30px;
+       }
+
+    }
+}
+

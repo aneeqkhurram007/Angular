@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--- Head start--->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign up</title>
+    <link href="partner.css" type="text/css" rel="stylesheet">
+    <!--- Bootstrap cdn link --->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!---fontawesome cdn links  --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <style>
+        body{
+            font-family: Arial;
+            color: white;
+            background: url(delux.jpg);
+            background-size: cover;
+        }
+        .signup{
+
+            background: blueviolet;
+        padding: 50px;
+        height: 580px;
+            margin-top: 120px !important;
+        margin: 0 auto;
+        width: 350px;
+        }
+        form{
+            width: 240px;
+            text-align: center;
+        }
+        input{
+            width: 240px;
+            text-align: center;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            font-family: 'Play', sans-serif;
+            font-size: 16px;
+            font-weight: 200;
+            padding: 10px 0;
+            transition: border 0.5s;
+            outline: none;
+            color: white;
+        }
+
+      ::placeholder{
+          color: aliceblue;
+          opacity: 0.8;
+      }
+
+
+            
+    </style>
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: blueviolet">
+    <a class="navbar-brand" href="#">Hotelo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars" style="color: white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" style="text-decoration: none; color: white; font-size: 22px">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a style="text-decoration: none; color: white; font-size: 22px"  class="nav-link" href="partner.html">Partner with us</a>
+            </li>
+
+            <li class="nav-item">
+                <a style="text-decoration: none; color: white; font-size: 22px"  class="nav-link " href="#">Your Bookings</a>
+            </li>
+
+            <li class="nav-item login">
+                <a style="text-decoration: none; color: white"  class="nav-link" href="sign%20up.html"><button class="btn avail" style="border-radius: 50px;font-size: 22px">Login | Signup</button></a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!-- navbar end -->
+
+<!-- form -->
+<div class="signup">
+    <form onsubmit="return myfun()">
+        <h2 style="color: white;">Sign Up</h2>
+        <input type="text" placeholder="First Name" id="first" value="" required>
+       <br><br>
+        <input type="text" placeholder="Last Name" id="last" value="" required>
+        <br><br>
+        <input type="password" placeholder="Password" id="password" value="" required>
+        <br><br>
+        <input type="password" placeholder="Confirm Password" id="passwords" value="" required>
+       <br><br>
+        <input type="text" placeholder="Email" id="email" value="" required>
+        <br><br>
+        <button class="btn" style="background-color: white; border-radius: 50px; width: 200px">Sign Up</button>
+    </form>
+    <br>
+    <br>
+   Already have an Account?<a href="Sign%20In.html" style="color: yellow">&nbsp;Sign in</a>
+</div>
+
+
+ <!-- modal
+
+        <div class="modal">
+            <div class="content" style="width: 700px;">
+                <span class="cross">X</span>
+                <p style="color: yellow;">You have successfully Signed up!</p>
+    
+            </div>
+    
+        </div>
+            
+ 
+    
+    <script>
+const btn = document.querySelector(".btn");
+const modal = document.querySelector(".modal");
+const cross = document.querySelector(".cross");
+
+btn.addEventListener("click", () => {
+    modal.classList.toggle("show");
+});
+
+cross.addEventListener("click", () => {
+    modal.classList.remove("show");
+    e.target.body.remove("show");
+});
+
+window.addEventListener("click", (e) => {
+    if(e.target == modal){
+        modal.classList.remove("show");
+    }
+});
+
+    </script>
+    
+-->
+
+
+</body>
+</html>

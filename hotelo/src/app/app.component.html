@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/html"
+  xmlns="http://www.w3.org/1999/html"
+>
+  <!--- Head start--->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Hotelo</title>
+    <link href="/assets/style.css" type="text/css" rel="stylesheet" />
+    <!--- Bootstrap cdn link --->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!---fontawesome cdn links  --->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/solid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <!-- date-time picker -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!--- head end --->
+
+  <body>
+    <!-- Splash page -->
+    <div class="splash">
+      <h1 class="splash-content fade-in">Hotelo</h1>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="navbar-brand" href="#">Hotelo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars" style="color: white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="index.html"
+              style="text-decoration: none; color: white; font-size: 22px"
+              >Home</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              style="text-decoration: none; color: white; font-size: 22px"
+              class="nav-link"
+              href="/assets/partner.html"
+              >Partner with us</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              style="text-decoration: none; color: white; font-size: 22px"
+              class="nav-link"
+              href="#"
+              >Your Bookings</a
+            >
+          </li>
+
+          <li class="nav-item login">
+            <a
+              style="text-decoration: none; color: white"
+              class="nav-link"
+              href="/assets/sign%20up.html"
+              ><button
+                class="btn avail"
+                style="border-radius: 50px; font-size: 22px"
+              >
+                Login | Signup
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- navbar end -->
+
+    <!--- main content(background image & text) --->
+    <main>
+      <div class="site-content">
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-column">
+            <p
+              class="site-title d-flex justify-content-center"
+              style="font-weight: bold"
+            >
+              Pakistan's Most Innovative Hotel Booking Service
+            </p>
+            <p class="site-desc justify-content-center">
+              The new door to book hotel
+            </p>
+
+            <div class="container">
+              <form>
+                <div class="form-group row">
+                  <div class="form-group mr-2 search">
+                    <label style="color: white">Where are you going</label>
+                    <input
+                      type="search"
+                      autocomplete="off"
+                      class="form-control"
+                      style="width: 250px; height: 60px"
+                      placeholder="Where are You Going"
+                    />
+                  </div>
+                  <div class="form-group checkin">
+                    <label style="color: white">Check-in</label>
+                    <input
+                      type="text"
+                      id="checkin"
+                      class="form-control"
+                      style="width: 200px; height: 60px"
+                      placeholder="Check-in date"
+                    />
+                  </div>
+                  <div class="form-group ml-2 checkout">
+                    <label style="color: white">Check-out</label>
+                    <input
+                      type="text"
+                      autocomplete="off"
+                      class="form-control"
+                      id="checkout"
+                      style="width: 200px; height: 60px"
+                      placeholder="Check-out date"
+                    />
+                  </div>
+
+                  <div class="form-group ml-2 adults">
+                    <label style="color: white">Adults</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      style="width: 80px; height: 60px"
+                      placeholder="1"
+                    />
+                  </div>
+                  <div class="form-group ml-2 childern">
+                    <label style="color: white">Childern</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      style="width: 80px; height: 60px"
+                      placeholder="1"
+                    />
+                  </div>
+                  <div class="form-group ml-2">
+                    <button
+                      type="submit"
+                      class="btn btn-lg avail check-availability"
+                      style="
+                        border-radius: 30px;
+                        width: 250px;
+                        height: 50px;
+                        margin-top: 30px;
+                      "
+                    >
+                      Check Availibilty
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--- main end --->
+
+    <!--- About us --->
+    <section
+      class="justify-content-center"
+      style="background-color: blueviolet; height: auto"
+    >
+      <div class="container" style="padding-top: 60px">
+        <p
+          class="m-auto treated"
+          style="font-weight: bold; text-align: center; color: white"
+        >
+          Our Hotels
+        </p>
+        <br />
+        <p class="m-auto txt" style="text-align: center; color: white">
+          We provide the best furnished and elegant hotels around the 3 main
+          cities of Pakistan. You can book of your choice.
+        </p>
+        <br />
+        <div class="m-auto evaluate">
+          <button
+            class="btn btn-lg ml-5"
+            style="
+              background-color: white;
+              color: blueviolet;
+              border-radius: 10px;
+              border: none;
+            "
+          >
+            Read more
+          </button>
+          <br />
+          <br />
+        </div>
+      </div>
+    </section>
+    <!-- about us end -->
+
+    <!--- Most Popular Destinations --->
+    <section style="background-color: white; height: auto; max-width: 100%">
+      <div class="container">
+        <h1
+          class="title"
+          style="
+            text-align: left;
+            padding-top: 50px;
+            font-weight: bold;
+            color: blueviolet;
+          "
+        >
+          Most Popular Destinations
+        </h1>
+        <div class="row mt-3">
+          <div class="col-lg-6 col-md-6 col-sm-12 d-block mt-3">
+            <img
+              class="img-fluid"
+              src="lahore.png"
+              alt="slide 1"
+              style="border-radius: 10px; object-fit: cover"
+            />
+            <div class="container bottom-left">
+              <p class="m-auto" style="color: white; font-weight: bold">
+                Lahore: The heart of Pakistan
+              </p>
+              <a href="lahore.html"
+                ><button
+                  class="btn text-white more"
+                  style="border: 1px solid white; border-radius: 7px"
+                >
+                  Read More
+                </button></a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 d-block mt-3">
+            <img
+              class="img-fluid"
+              src="karachi.jpg"
+              alt="slide 1"
+              style="border-radius: 10px; object-fit: cover"
+            />
+            <div class="container bottom-left">
+              <p class="m-auto" style="color: white; font-weight: bold">
+                Karachi: The City of lights
+              </p>
+              <a href="karachi.html"
+                ><button
+                  class="btn text-white more"
+                  style="border: 1px solid white; border-radius: 7px"
+                >
+                  Read More
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-lg-6 col-md-6 col-sm-12 d-block mt-3">
+            <img
+              class="img-fluid"
+              src="islamabad.jpg"
+              alt="slide 1"
+              style="border-radius: 10px; object-fit: cover"
+            />
+            <div class="container bottom-left">
+              <p class="m-auto" style="color: white; font-weight: bold">
+                Islamabad: The capital of Pakistan
+              </p>
+              <a href="islamabad.html"
+                ><button
+                  class="btn text-white more"
+                  style="border: 1px solid white; border-radius: 7px"
+                >
+                  Read More
+                </button></a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 d-block mt-3">
+            <img
+              class="img-fluid"
+              src="peshawar.jpg"
+              alt="slide 1"
+              style="border-radius: 10px; object-fit: cover"
+            />
+            <div class="container bottom-left">
+              <p class="m-auto" style="color: white; font-weight: bold">
+                Peshawar: The city of flowers
+              </p>
+              <a href="peshawar.html"
+                ><button
+                  class="btn text-white more"
+                  style="border: 1px solid white; border-radius: 7px"
+                >
+                  Read More
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+      </div>
+    </section>
+    <!-- most popular end -->
+
+    <!--- Categories --->
+    <section
+      class="margin"
+      style="background-color: #a87ed6; height: auto; max-width: 100%"
+    >
+      <div class="container">
+        <p
+          class="slider-title container"
+          style="padding-top: 50px; font-weight: bold; color: white"
+        >
+          Categories
+        </p>
+        <div class="row" style="margin-top: 30px; padding-bottom: 60px">
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+            <div
+              class="card"
+              style="
+                width: 30rem;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+              "
+            >
+              <img
+                class="card-img-top"
+                src="economy.jpg"
+                alt="Card image cap"
+                style="height: 14rem; border-radius: 20px 20px 0px 0px"
+              />
+              <div class="card-body">
+                <h4 class="card-title" style="font-weight: bold">
+                  Economy Rooms
+                </h4>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+            <div
+              class="card"
+              style="
+                width: 30rem;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+              "
+            >
+              <img
+                class="card-img-top"
+                src="premium.jpg"
+                alt="Card image cap"
+                style="height: 14rem; border-radius: 20px 20px 0px 0px"
+              />
+              <div class="card-body">
+                <h4 class="card-title" style="font-weight: bold">
+                  Premium Rooms
+                </h4>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- categories end -->
+
+    <!--- footer --->
+    <footer style="height: auto; background-color: blueviolet">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 m-auto">
+            <h2 class="text-white">Let's work<br />together on great things</h2>
+          </div>
+          <div
+            class="col-lg-3 col-md-3 col-sm-6 col-6 m-auto text-white footer"
+            style="font-weight: lighter"
+          >
+            <label>Home</label>
+            <br />
+            <label>About us</label>
+            <br />
+            <label>Terms of use</label>
+            <br />
+            <label>Privacy Policy</label>
+            <br />
+            <label>Contact</label>
+          </div>
+          <div
+            class="col-lg-3 col-md-3 col-sm-6 col-6 m-auto text-white footer"
+          >
+            <label>Social Links</label>
+            <br />
+            <label>Facebook</label>
+            <br />
+            <label>Twitter</label>
+            <br />
+            <label>Linkedin</label>
+            <br />
+            <label>Youtube</label>
+          </div>
+        </div>
+        <p class="text-white pt-5" style="text-align: left; font-size: 15px">
+          Copyright © 2020 Made with <i class="fas fa-heart"></i> for Pakistan
+        </p>
+        <br />
+      </div>
+    </footer>
+
+    <!--- Javascript libraries & links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+
+    <!-- Custom JS for background color on scrolling -->
+    <script>
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 400) {
+          $(".fixed-top").css("background", "transparent");
+        } else {
+          $(".fixed-top").css("background", "blueviolet");
+        }
+      });
+    </script>
+
+    <!-- date-time picker script-->
+    <script>
+      $("#checkin").datetimepicker({
+        timepicker: false,
+        datepicker: true,
+        format: "d-m-y",
+        weeks: true,
+      });
+      $("#checkout").datetimepicker({
+        timepicker: false,
+        datepicker: true,
+        format: "d-m-y",
+        weeks: true,
+      });
+    </script>
+
+    <!-- splash page js code -->
+
+    <script>
+      const splash = document.querySelector(".splash");
+
+      document.addEventListener("DOMContentLoaded", (e) => {
+        setTimeout(() => {
+          splash.classList.add("display-none");
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>
